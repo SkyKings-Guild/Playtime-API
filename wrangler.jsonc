@@ -1,0 +1,21 @@
+{
+	"name": "skykings-playtime-api",
+	"main": "src/entry.py",
+	"compatibility_date": "2026-09-29",
+	"compatibility_flags": [
+		"python_workers"
+	],
+	"observability": {
+		"enabled": true
+	},
+	"d1_databases": [
+		{
+			"binding": "PLAYTIME",
+			"database_name": "playtime",
+			"database_id": "34f2e240-43d2-4d93-9731-7f12dae88c20"
+		}
+	],
+	"vars": {
+		"SYSTEM_API_KEY": "G1iouvi2r5IGKZyp2vi9vpKdF5dDNWF1ir6BvhOQaheChhBwgLtwtbolKffpQZY3uqqdb6L-bsoVMR6atwFJXw"
+	}
+}
