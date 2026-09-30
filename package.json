@@ -9,5 +9,8 @@
 	},
 	"devDependencies": {
 		"wrangler": "^4.144.0"
+	},
+	"dependencies": {
+		"@types/node": "^26.6.3"
 	}
 }

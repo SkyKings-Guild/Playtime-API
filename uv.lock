@@ -369,6 +369,7 @@ source = { virtual = "." }
 dependencies = [
     { name = "fastapi" },
     { name = "pydantic" },
+    { name = "workers-runtime-sdk" },
 ]
 
 [package.dev-dependencies]
@@ -381,6 +382,7 @@ dev = [
 requires-dist = [
     { name = "fastapi", specifier = "<0.129" },
     { name = "pydantic", specifier = ">=2.13.5" },
+    { name = "workers-runtime-sdk", specifier = ">=1.9.1" },
 ]
 
 [package.metadata.requires-dev]

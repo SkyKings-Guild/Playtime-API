@@ -1,16 +1,20 @@
+from typing import TYPE_CHECKING
+
 from fastapi import FastAPI
 from helpers.api_keygen import create_key
 from helpers.auth import AuthenticatedUser, SystemAuth
 from helpers.models import PlaytimeEntry
-from js import Env
 from starlette.requests import Request
 from starlette.responses import JSONResponse, RedirectResponse
+
+if TYPE_CHECKING:
+    from js import Env
 
 app = FastAPI(redoc_url="/", docs_url=None)
 
 @app.get("/init-db", dependencies=[SystemAuth])
 async def get_init_db(request: Request):
-    env: Env = request.scope["env"]
+    env: "Env" = request.scope["env"]
     result = await env.PLAYTIME.prepare("CREATE TABLE IF NOT EXISTS api_keys (key TEXT, user_id INTEGER)").run()
     result_2 = await env.PLAYTIME.prepare("CREATE TABLE IF NOT EXISTS playtime (user_id INTEGER, start INTEGER, end INTEGER, type TEXT, map TEXT)").run()
     return {"message": "Database initialized", "data": [result, result_2]}
@@ -21,7 +25,7 @@ async def get_authorized_user_info(request: Request, user: AuthenticatedUser):
 
 @app.post("/@me/playtime")
 async def upload_playtime(request: Request, entries: list[PlaytimeEntry], user: AuthenticatedUser):
-    env: Env = request.scope["env"]
+    env: "Env" = request.scope["env"]
     # do some sanity checks here:
     # - check if any of entries overlap or have invalid start/end times
     # - check if they overlap the range of what we already have saved in the database
@@ -43,13 +47,13 @@ async def upload_playtime(request: Request, entries: list[PlaytimeEntry], user: 
 
 @app.get("/@me/playtime")
 async def get_my_playtime(request: Request, user: AuthenticatedUser):
-    env: Env = request.scope["env"]
+    env: "Env" = request.scope["env"]
     result = (await env.PLAYTIME.prepare("SELECT * FROM playtime WHERE user_id = ?").bind(user.user_id).run()).results
     return {"user_id": user.user_id, "playtime": result}
 
 @app.post("/{user_id}/keys", dependencies=[SystemAuth])
 async def create_api_key(request: Request, user_id: int):
-    env: Env = request.scope["env"]
+    env: "Env" = request.scope["env"]
     new_key = create_key()
     # quickly verify it doesn't already exist (highly unlikely)
     result = True
@@ -61,7 +65,7 @@ async def create_api_key(request: Request, user_id: int):
 
 @app.get("/{user_id}/playtime", dependencies=[SystemAuth])
 async def get_user_playtime(request: Request, user_id: int):
-    env: Env = request.scope["env"]
+    env: "Env" = request.scope["env"]
     result = (await env.PLAYTIME.prepare("SELECT * FROM playtime WHERE user_id = ?").bind(user_id).run()).results
     return {"user_id": user_id, "playtime": result}
 
