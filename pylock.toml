@@ -1,0 +1,58 @@
+lock-version = "1.0"
+created-by = "uv"
+requires-python = ">=3.14.2"
+
+[[packages]]
+name = "annotated-doc"
+version = "0.0.5"
+wheels = [{ url = "https://files.pythonhosted.org/packages/3e/30/e900b21425a860e195f32e37657aa1f7c7f2b1bfb26f03ca209b90933c06/annotated_doc-0.0.5-py3-none-any.whl", upload-time = 2026-07-28T13:50:57Z, size = 5302, hashes = { sha256 = "117bac03a25ede5df5440e855b32d556049ca169ead221505badf432fed4b101" } }]
+
+[[packages]]
+name = "annotated-types"
+version = "0.8.0"
+wheels = [{ url = "https://files.pythonhosted.org/packages/99/91/8acff4f5e50511b911bbccb72b8628a49c68ce14148cd9f6431094859a90/annotated_types-0.8.0-py3-none-any.whl", upload-time = 2026-07-23T20:16:12Z, size = 13427, hashes = { sha256 = "f072f4d804ea359e4eaf198b1af7a8b0943881a87f31bb764f8bf219bb9419e0" } }]
+
+[[packages]]
+name = "anyio"
+version = "4.15.1"
+wheels = [{ url = "https://files.pythonhosted.org/packages/12/b8/4bd346e22b28902df4d651910f5242c28d84e4a5c2435ca5c3f797ed7e2e/anyio-4.15.1-py3-none-any.whl", upload-time = 2026-09-05T10:42:37Z, size = 132079, hashes = { sha256 = "6152fdbbf9a77fdec97731721bebf7c4c44f7c29b424b0065826173efc7ed101" } }]
+
+[[packages]]
+name = "fastapi"
+version = "0.128.8"
+wheels = [{ url = "https://files.pythonhosted.org/packages/9f/37/37b07e276f8923c69a5df266bfcb5bac4ba8b55dfe4a126720f8c48681d1/fastapi-0.128.8-py3-none-any.whl", upload-time = 2026-02-11T15:19:35Z, size = 103630, hashes = { sha256 = "5618f492d0fe973a778f8fec97723f598aa9deee495040a8d51aaf3cf123ecf1" } }]
+
+[[packages]]
+name = "idna"
+version = "3.20"
+wheels = [{ url = "https://files.pythonhosted.org/packages/58/a2/bb081bab032533a855d44de1d56f8e8426114ff1ba5d1f07a438a0a654f8/idna-3.20-py3-none-any.whl", upload-time = 2026-09-17T14:11:03Z, size = 69583, hashes = { sha256 = "ab7ae7122974553370f0bdb919e1a960b2cd1bc1ef0276416d896db81c14582c" } }]
+
+[[packages]]
+name = "pydantic"
+version = "2.14.0b2"
+wheels = [{ url = "https://files.pythonhosted.org/packages/95/e7/daa2cf6bc551f9434b7e3d8ba3d747baa2a9d24dd5f6572c3742924431ad/pydantic-2.14.0b2-py3-none-any.whl", upload-time = 2026-09-09T21:55:04Z, size = 484647, hashes = { sha256 = "4556c932fb3dbb7e9ac773bee241b2eb7058a2f9ff1d850d45d7d11cb6e54b68" } }]
+
+[[packages]]
+name = "pydantic-core"
+version = "2.49.0"
+wheels = [{ url = "https://files.pythonhosted.org/packages/57/6e/592912b19c96b911e728813696919a2a34258f99187da1e54aa3222b06a5/pydantic_core-2.49.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl", upload-time = 2026-09-09T21:27:50Z, size = 1449332, hashes = { sha256 = "62535ce2294441c986da1aeb743f7255ac99f3e0a3119bd8c44b36406d9f3721" } }]
+
+[[packages]]
+name = "starlette"
+version = "0.52.1"
+wheels = [{ url = "https://files.pythonhosted.org/packages/81/0d/13d1d239a25cbfb19e740db83143e95c772a1fe10202dda4b76792b114dd/starlette-0.52.1-py3-none-any.whl", upload-time = 2026-01-18T13:34:09Z, size = 74272, hashes = { sha256 = "0029d43eb3d273bc4f83a08720b4912ea4b071087a3b48db01b7c839f7954d74" } }]
+
+[[packages]]
+name = "typing-extensions"
+version = "4.16.0"
+wheels = [{ url = "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl", upload-time = 2026-07-02T08:40:04Z, size = 45571, hashes = { sha256 = "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8" } }]
+
+[[packages]]
+name = "typing-inspection"
+version = "0.4.4"
+wheels = [{ url = "https://files.pythonhosted.org/packages/67/81/4add07e5172b7ac40d8ed5ff580409a7801a4fe26d529bdd915401dabfbe/typing_inspection-0.4.4-py3-none-any.whl", upload-time = 2026-08-12T12:37:24Z, size = 14750, hashes = { sha256 = "65b8397ba37ccbce054456aaccddfc91e6e3083c92824df348d96ca832f3f147" } }]
+
+[[packages]]
+name = "workers-runtime-sdk"
+version = "1.9.1"
+wheels = [{ url = "https://files.pythonhosted.org/packages/e7/a9/b2d288c73728ccd9f50b8f0020c2fdd0b2f3f0d0d8efde56f2b2e64529d5/workers_runtime_sdk-1.9.1-py3-none-any.whl", upload-time = 2026-09-29T03:30:18Z, size = 38588, hashes = { sha256 = "1cb71387b2d67ac59ab84ab4d3151dea2205fb5ce22a08d0a0dda5cda34b5f2b" } }]
