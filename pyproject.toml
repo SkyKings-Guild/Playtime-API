@@ -1,0 +1,13 @@
+[project]
+name = "royal-rain-8e6a"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi<0.129",
+    "pydantic>=2.13.5",
+]
+
+[dependency-groups]
+dev = ["workers-py", "workers-runtime-sdk"]
