@@ -24,7 +24,7 @@ def get_authenticated_user(can_be_pending: bool = False) -> Depends:
         user_id = result.results[0]["user_id"] if result.results else None
         if not user_id:
             raise HTTPException(401, "Unauthorized")
-        return UserModel(user_id=user_id)
+        return UserModel(user_id=int(user_id))
 
     return Depends(wrapped)
 
