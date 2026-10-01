@@ -11,7 +11,7 @@ from starlette.responses import JSONResponse, RedirectResponse
 if TYPE_CHECKING:
     from js import Env
 
-app = FastAPI(docs_url="/")
+app = FastAPI(docs_url="/", title="Playtime API")
 
 async def ratelimit_identifier(request: Request):
     user: AuthenticatedUser = await get_authenticated_user(request)
