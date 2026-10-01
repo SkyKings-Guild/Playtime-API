@@ -98,3 +98,7 @@ included in the public OpenAPI schema.
 `POST /{user_id}/keys` returns the newly generated key once. Store it
 securely; generating another key for the same user invalidates the previous
 key.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for details.
