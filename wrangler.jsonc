@@ -1,0 +1,21 @@
+{
+    "name": "playtime-api",
+    "main": "src/entry.py",
+    "compatibility_date": "2026-09-29",
+    "compatibility_flags": [
+        "python_workers"
+    ],
+    "observability": {
+        "enabled": true
+    },
+    "workers_dev": false,
+    "preview_urls": false,
+    "d1_databases": [
+        {
+            "binding": "PLAYTIME",
+            "database_name": "playtime",
+            "database_id": "34f2e240-43d2-4d93-9731-7f12dae88c20"
+        }
+    ],
+    "vars": {}
+}
