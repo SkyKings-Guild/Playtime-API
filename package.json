@@ -8,7 +8,7 @@
 		"start": "uv run pywrangler dev"
 	},
 	"devDependencies": {
-		"wrangler": "^4.144.0"
+		"wrangler": "^4.156.0"
 	},
 	"dependencies": {
 		"@types/node": "^26.6.3"
